@@ -47,7 +47,7 @@ if __name__ == '__main__':
                       dest='port',
                       type='int',
                       default=_default_port)
-    parser.add_option('--command',
+    parser.add_option('--command', '-c',
                       help='command to run on device', default='echo hello world')
     (opts, args) = parser.parse_args()
 
