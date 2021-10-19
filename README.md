@@ -27,17 +27,17 @@ The way I use it:
   MUX > New connection from ('127.0.0.1', 37582)
   ```
 
-2. Then connect any number of clients:
+2. Then connect any number of clients and run commands:
   ```bash
-  stormbreaker:mux_serial> ./mux_client.py -p 23200
+  stormbreaker:mux_serial> ./mux_client.py -p 23200 -c 'echo hello world'
   MUX > Connected to localhost:23200
   MUX > Use ctrl+] to stop...
 
-  0,0,0
-  0,0,0
-  0,0,0
-  370,317,0
-  239,241,0
+  hello
+  
+  MUX > Closing...
+  MUX > Done! =)
+
   ```
 
 3. ...and the logger:
